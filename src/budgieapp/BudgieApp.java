@@ -8,6 +8,10 @@ public class BudgieApp {
 
 
         int one = 1;
+        int two = 2;
+        int sum = 0;
+        sum = one + two;
+        
 
     }    
 }
