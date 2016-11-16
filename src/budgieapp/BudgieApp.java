@@ -11,7 +11,7 @@ public class BudgieApp {
         int two = 2;
         int sum = 0;
         sum = one + two;
-        
+        System.out.println("hi");
 
     }    
 }
