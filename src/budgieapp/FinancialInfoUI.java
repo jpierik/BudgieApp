@@ -27,21 +27,207 @@ public class FinancialInfoUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        textFieldEnterIncome = new javax.swing.JTextField();
+        userMonthlyIncome = new java.awt.TextField();
+        submitButton = new javax.swing.JButton();
+        budgieTitle1 = new javax.swing.JTextField();
+        textFieldEnterLivingExpense = new javax.swing.JTextField();
+        textFieldEnterOtherExpense = new javax.swing.JTextField();
+        textFieldEnterBills = new javax.swing.JTextField();
+        budgieTitle2 = new javax.swing.JTextField();
+        userMonthlyLivingExpense = new java.awt.TextField();
+        userMonthlyBills = new java.awt.TextField();
+        userMonthlyOtherExpense = new java.awt.TextField();
+        jLabel2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 255, 204));
+        setPreferredSize(new java.awt.Dimension(720, 480));
+
+        textFieldEnterIncome.setBackground(new java.awt.Color(240, 240, 240));
+        textFieldEnterIncome.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        textFieldEnterIncome.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textFieldEnterIncome.setText("Enter Monthly Income: ");
+        textFieldEnterIncome.setBorder(null);
+        textFieldEnterIncome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldEnterIncomeActionPerformed(evt);
+            }
+        });
+
+        userMonthlyIncome.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        userMonthlyIncome.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+
+        submitButton.setBackground(new java.awt.Color(204, 255, 255));
+        submitButton.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        submitButton.setText("Submit Information");
+
+        budgieTitle1.setBackground(new java.awt.Color(240, 240, 240));
+        budgieTitle1.setFont(new java.awt.Font("Kristen ITC", 1, 36)); // NOI18N
+        budgieTitle1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        budgieTitle1.setText("Budgie");
+        budgieTitle1.setBorder(null);
+        budgieTitle1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                budgieTitle1ActionPerformed(evt);
+            }
+        });
+
+        textFieldEnterLivingExpense.setBackground(new java.awt.Color(240, 240, 240));
+        textFieldEnterLivingExpense.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        textFieldEnterLivingExpense.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textFieldEnterLivingExpense.setText("Enter Monthly Living Expense: ");
+        textFieldEnterLivingExpense.setBorder(null);
+        textFieldEnterLivingExpense.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldEnterLivingExpenseActionPerformed(evt);
+            }
+        });
+
+        textFieldEnterOtherExpense.setBackground(new java.awt.Color(240, 240, 240));
+        textFieldEnterOtherExpense.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        textFieldEnterOtherExpense.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textFieldEnterOtherExpense.setText("Enter Any Other Monthly Expense:");
+        textFieldEnterOtherExpense.setBorder(null);
+        textFieldEnterOtherExpense.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldEnterOtherExpenseActionPerformed(evt);
+            }
+        });
+
+        textFieldEnterBills.setBackground(new java.awt.Color(240, 240, 240));
+        textFieldEnterBills.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        textFieldEnterBills.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textFieldEnterBills.setText("Enter Monthly Bills Expense: ");
+        textFieldEnterBills.setBorder(null);
+        textFieldEnterBills.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldEnterBillsActionPerformed(evt);
+            }
+        });
+
+        budgieTitle2.setBackground(new java.awt.Color(240, 240, 240));
+        budgieTitle2.setFont(new java.awt.Font("Kristen ITC", 1, 11)); // NOI18N
+        budgieTitle2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        budgieTitle2.setText("Finance Made Simple");
+        budgieTitle2.setBorder(null);
+        budgieTitle2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                budgieTitle2ActionPerformed(evt);
+            }
+        });
+
+        userMonthlyLivingExpense.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        userMonthlyLivingExpense.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+
+        userMonthlyBills.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        userMonthlyBills.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+
+        userMonthlyOtherExpense.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        userMonthlyOtherExpense.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/budgieapp/pictures/budgie bird.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(69, 69, 69)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(textFieldEnterBills, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textFieldEnterOtherExpense, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textFieldEnterLivingExpense, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textFieldEnterIncome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(userMonthlyIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(userMonthlyLivingExpense, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(userMonthlyOtherExpense, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(userMonthlyBills, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(submitButton)
+                        .addGap(223, 223, 223))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(budgieTitle2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(233, 233, 233))))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(260, Short.MAX_VALUE)
+                    .addComponent(budgieTitle1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(202, 202, 202)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(68, Short.MAX_VALUE)
+                .addComponent(budgieTitle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(userMonthlyIncome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(textFieldEnterIncome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(18, 18, 18)
+                                        .addComponent(textFieldEnterLivingExpense, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(userMonthlyLivingExpense, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(userMonthlyBills, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textFieldEnterBills, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(userMonthlyOtherExpense, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(textFieldEnterOtherExpense, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44)))
+                .addComponent(submitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(21, 21, 21)
+                    .addComponent(budgieTitle1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(350, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void textFieldEnterIncomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldEnterIncomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldEnterIncomeActionPerformed
+
+    private void budgieTitle1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_budgieTitle1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_budgieTitle1ActionPerformed
+
+    private void textFieldEnterLivingExpenseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldEnterLivingExpenseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldEnterLivingExpenseActionPerformed
+
+    private void textFieldEnterOtherExpenseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldEnterOtherExpenseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldEnterOtherExpenseActionPerformed
+
+    private void textFieldEnterBillsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldEnterBillsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldEnterBillsActionPerformed
+
+    private void budgieTitle2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_budgieTitle2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_budgieTitle2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +265,17 @@ public class FinancialInfoUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField budgieTitle1;
+    private javax.swing.JTextField budgieTitle2;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton submitButton;
+    private javax.swing.JTextField textFieldEnterBills;
+    private javax.swing.JTextField textFieldEnterIncome;
+    private javax.swing.JTextField textFieldEnterLivingExpense;
+    private javax.swing.JTextField textFieldEnterOtherExpense;
+    private java.awt.TextField userMonthlyBills;
+    private java.awt.TextField userMonthlyIncome;
+    private java.awt.TextField userMonthlyLivingExpense;
+    private java.awt.TextField userMonthlyOtherExpense;
     // End of variables declaration//GEN-END:variables
 }
