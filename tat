@@ -1,0 +1,71 @@
+[33mcommit 222d4b5b8b21beafb43b0259e0d26415aef60db0[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Fri Nov 18 21:50:07 2016 -0500
+
+    updates
+
+[33mcommit 94925e4ad8c9264b4b6678af2be3321116d8ea6d[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Fri Nov 18 17:57:52 2016 -0500
+
+    added financial info class
+
+[33mcommit 72d0a0fa6347188dc732400a33503ce62f6bbeef[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 18:14:08 2016 -0600
+
+    Started interface work for the first use case
+
+[33mcommit 50909e6bba33d1f09b2af492cee503dc5eedbe28[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 17:50:02 2016 -0600
+
+    Started UI for first use case
+
+[33mcommit a7fdde556c6a20057a681d382146bfa33b977b9b[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 16:55:38 2016 -0600
+
+    updated readme
+
+[33mcommit e3002b01f48ce501ee82f4a563c96155992d3f28[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 14:29:54 2016 -0600
+
+    modified readme
+
+[33mcommit 01b0d88a7ddc1d54d89fcf644ba1cdda1616fc94[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 11:55:19 2016 -0600
+
+    Added readme to budgie branch
+
+[33mcommit 8c24c9feb0ff3438ce290b26a7d3cfa0e3b677b3[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 12:50:35 2016 -0600
+
+    another test
+
+[33mcommit f79d3111b61e61945446c1e5852aff55721f6477[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 12:48:06 2016 -0600
+
+    further test
+
+[33mcommit 2b9b3c49d5cf72fda126c71b7fc22da80416b289[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 06:41:34 2016 -1000
+
+    simple test of repo/budgie app branch
+
+[33mcommit 6afa3940405262937e69dea348df02bb6a507a35[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 06:39:03 2016 -1000
+
+    Added BudgieApp to repository
+
+[33mcommit 3e9e366dbbe2f0f99a3bfa049cdbdd64763dd836[m
+Author: jpierik <jpierik@oakland.edu>
+Date:   Wed Nov 16 06:38:16 2016 -1000
+
+    :octocat: Added .gitattributes & .gitignore files

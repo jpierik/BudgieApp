@@ -26,17 +26,16 @@ public class EnterFinancialInfo extends FinancialInfoUI{
     public void getInputInfo(){
         infoUI.setVisible(true);
         //infoUI.getContentPane().setBackground(Color.white);
+        while (infoUI.isVisible() == true){
         monthlyIncomeStr = infoUI.userMonthlyIncome.getText();
         monthlyBillsStr = infoUI.getUserMonthlyBills().getText();
         monthlyOtherExpenseStr = infoUI.userMonthlyOtherExpense.getText();
         monthlyLivingExpenseStr = infoUI.userMonthlyLivingExpense.getText();
-        
+        System.out.println(monthlyIncomeStr);
         System.out.println(monthlyBillsStr);
         
-       if (infoUI.submitBool == true){
-           System.out.println(monthlyBillsStr);
-       }
-        
+        }
+           
             
         }
         

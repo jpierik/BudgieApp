@@ -263,7 +263,7 @@ public class FinancialInfoUI extends javax.swing.JFrame {
         userMonthlyBills.setText("");
         this.userMonthlyBills.setText("");
         //System.out.println(userMonthlyIncome.getText());
-        submitBool = true;
+        //submitBool = true;
     }//GEN-LAST:event_submitButtonActionPerformed
 
     private void userMonthlyLivingExpenseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userMonthlyLivingExpenseActionPerformed
