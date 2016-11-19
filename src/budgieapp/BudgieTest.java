@@ -11,6 +11,7 @@ package budgieapp;
  */
 public class BudgieTest {
     
+    
     public static void main(String[] args) {
         EnterFinancialInfo info = new EnterFinancialInfo();
         info.getInputInfo();
