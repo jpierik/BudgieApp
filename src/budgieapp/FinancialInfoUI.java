@@ -199,7 +199,7 @@ public class FinancialInfoUI extends javax.swing.JFrame {
                         .addGap(247, 247, 247)
                         .addComponent(budgieTitle2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(254, 254, 254)
+                        .addGap(154, 154, 154)
                         .addComponent(submitButton)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -271,13 +271,13 @@ public class FinancialInfoUI extends javax.swing.JFrame {
 
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         // TODO add your handling code here:
-        this.userMonthlyIncome.setText("");
-        this.userMonthlyLivingExpense.setText("");
-        this.userMonthlyOtherExpense.setText("");
+        income = userMonthlyIncome.getText();
+        userMonthlyLivingExpense.setText("");
+        userMonthlyOtherExpense.setText("");
         //userMonthlyBills.setText("");
-        this.userMonthlyBills.setText("");
+        userMonthlyBills.setText("");
         //System.out.println(userMonthlyIncome.getText());
-        //submitBool = true;
+        submitBool = true;
     }//GEN-LAST:event_submitButtonActionPerformed
 
     private void userMonthlyLivingExpenseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userMonthlyLivingExpenseActionPerformed
@@ -294,43 +294,7 @@ public class FinancialInfoUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_userMonthlyOtherExpenseActionPerformed
-
-    public TextField getUserMonthlyBills() {
-        return userMonthlyBills;
-    }
-
-    public void setUserMonthlyBills(TextField userMonthlyBills) {
-        this.userMonthlyBills = userMonthlyBills;
-    }
-
-    public TextField getUserMonthlyIncome() {
-        return userMonthlyIncome;
-    }
-
-    public void setUserMonthlyIncome(TextField userMonthlyIncome) {
-        this.userMonthlyIncome = userMonthlyIncome;
-    }
-
-    public TextField getUserMonthlyLivingExpense() {
-        return userMonthlyLivingExpense;
-    }
-
-    public void setUserMonthlyLivingExpense(TextField userMonthlyLivingExpense) {
-        this.userMonthlyLivingExpense = userMonthlyLivingExpense;
-    }
-
-    public TextField getUserMonthlyOtherExpense() {
-        return userMonthlyOtherExpense;
-    }
-
-    public void setUserMonthlyOtherExpense(TextField userMonthlyOtherExpense) {
-        this.userMonthlyOtherExpense = userMonthlyOtherExpense;
-    }
-
-    
-    
-
-
+ 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -365,7 +329,7 @@ public class FinancialInfoUI extends javax.swing.JFrame {
             }
         });
     }
-
+    public String income;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField budgieTitle1;
     private javax.swing.JTextField budgieTitle2;
