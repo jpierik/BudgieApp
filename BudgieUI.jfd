@@ -8,6 +8,7 @@ new FormModel {
 			"$verticalGroup": "par l {comp panel1::t:::x}"
 		} ) {
 			name: "this"
+			"title": "Submit Information"
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
 				"$horizontalGroup": "par l {seq l {space :p:87:p, par t {comp jLabelEnterIncome::t:p:171:p, par l:t::p {comp jLabelEnterOtherExpense::t:::x, comp jLabelEnterBills::t:::x}, comp jLabelEnterLivingExpense:::p:205:p}, space u:::p, par l {seq {par l {comp userMonthlyBills::l:p:190:p, comp userMonthlyOtherExpense::l:p:190:p, comp userMonthlyLivingExpense::l:p:190:p, comp userMonthlyIncome::l:p:190:p, comp budgieTitle1::l:p:190:p}, space s:::p, comp budgieBirdPic::::249:x}, seq {par l {comp submitButton:::p:190:p, comp budgieTitle2:::p:190:p}, space :0:0:x}}, space :5:5:p}}"
 				"$verticalGroup": "par l {seq t {space :::p, comp budgieTitle1:::p:40:p, par l {seq l {space :::p, comp budgieTitle2:::p::p, space ::65:x, par b {comp userMonthlyIncome::b:p::p, comp jLabelEnterIncome::b:p::p}, space :p:13:p, par b {comp userMonthlyLivingExpense::b:p::p, comp jLabelEnterLivingExpense::b:p::p}, space u:::p, par b {comp userMonthlyBills::b:p::p, comp jLabelEnterBills::b:p::p}, space u:::p, par b {comp userMonthlyOtherExpense::b:p::p, comp jLabelEnterOtherExpense::b:p::p}, space :p:109:p}, seq l {space :p:55:p, comp budgieBirdPic:::p:164:p, space ::93:x}}, comp submitButton:::p:41:p, space :p:72:p}}"
@@ -84,6 +85,7 @@ new FormModel {
 		} ) {
 			name: "frame1"
 			"background": new java.awt.Color( 255, 255, 255, 255 )
+			"title": "Current Financial Summary"
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
 				"$horizontalGroup": "par l {seq t {par l {seq {space ::87:x, par t {comp budgieTitle3:::p:190:p, seq {comp loanScreen:::p:190:p, space s:::p, par t {comp budgieTitle4:::p:190:p, comp submitButton3:::p:190:p}}}, space :p:18:p}, seq l {space :p:121:p, par t {comp jLabelYearlyTotalExpense::t:p:171:p, comp jLabelMonthlyTotalExpense::t:p:171:p, comp jLabelYearlyIncome::t:p:171:p}, space :::x}}, par l {comp budgieBirdPic2:::p:245:p, comp submitButton4:::p:190:p}, space :p:16:p}}"
 				"$verticalGroup": "par l {seq l {space :::p, comp budgieTitle3:::p:40:p, space :::p, comp budgieTitle4:::p::p, par l {seq {space :p:102:p, comp jLabelYearlyIncome:::p::p, space u:::p, comp jLabelMonthlyTotalExpense:::p::p, space u:::p, comp jLabelYearlyTotalExpense:::p::p, space ::152:x}, seq t {space ::53:x, comp budgieBirdPic2:::p:164:p, space :p:104:p}}, par b {comp loanScreen::b:p:41:p, comp submitButton4::b:p:41:p, comp submitButton3::b:p:41:p}, space :p:40:p}}"
