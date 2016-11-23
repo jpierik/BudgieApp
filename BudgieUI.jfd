@@ -1,0 +1,151 @@
+JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_112" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:87:p, par t {comp jLabelEnterIncome::t:p:171:p, par l:t::p {comp jLabelEnterOtherExpense::t:::x, comp jLabelEnterBills::t:::x}, comp jLabelEnterLivingExpense:::p:205:p}, space u:::p, par l {seq {par l {comp userMonthlyBills::l:p:190:p, comp userMonthlyOtherExpense::l:p:190:p, comp userMonthlyLivingExpense::l:p:190:p, comp userMonthlyIncome::l:p:190:p, comp budgieTitle1::l:p:190:p}, space s:::p, comp budgieBirdPic::::249:x}, seq {par l {comp submitButton:::p:190:p, comp budgieTitle2:::p:190:p}, space :0:0:x}}, space :5:5:p}}"
+				"$verticalGroup": "par l {seq t {space :::p, comp budgieTitle1:::p:40:p, par l {seq l {space :::p, comp budgieTitle2:::p::p, space ::65:x, par b {comp userMonthlyIncome::b:p::p, comp jLabelEnterIncome::b:p::p}, space :p:13:p, par b {comp userMonthlyLivingExpense::b:p::p, comp jLabelEnterLivingExpense::b:p::p}, space u:::p, par b {comp userMonthlyBills::b:p::p, comp jLabelEnterBills::b:p::p}, space u:::p, par b {comp userMonthlyOtherExpense::b:p::p, comp jLabelEnterOtherExpense::b:p::p}, space :p:109:p}, seq l {space :p:55:p, comp budgieBirdPic:::p:164:p, space ::93:x}}, comp submitButton:::p:41:p, space :p:72:p}}"
+			} ) {
+				name: "panel1"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 1, false )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "submitButton"
+					"text": "Submit Info"
+					"font": &Font0 new java.awt.Font( "Arial", 0, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "submitButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userMonthlyIncome"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userMonthlyLivingExpense"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userMonthlyBills"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userMonthlyOtherExpense"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabelEnterIncome"
+					"text": "Enter Monthly Income:"
+					"font": &Font1 new java.awt.Font( "Arial", 1, 12 )
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabelEnterLivingExpense"
+					"text": "Enter Monthly Living Expense:"
+					"font": new java.awt.Font( "Arial", 1, 12 )
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabelEnterBills"
+					"text": "Enter Monthly Bills Expense:"
+					"font": new java.awt.Font( "Arial", 1, 12 )
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabelEnterOtherExpense"
+					"text": "Enter Any Other Monthly Expense:`"
+					"font": new java.awt.Font( "Arial", 1, 12 )
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "budgieTitle1"
+					"text": "Budgie"
+					"font": &Font2 new java.awt.Font( "Kristen ITC", 1, 36 )
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "budgieBirdPic"
+					"icon": &SwingIcon0 new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\jonpi\\Desktop\\budgie bird.jpg" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "budgieTitle2"
+					"text": "Finance Made Simple"
+					"font": &Font3 new java.awt.Font( "Kristen ITC", 1, 12 )
+					"horizontalAlignment": 0
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 780, 515 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2::l:::x}"
+			"$verticalGroup": "par l {comp panel2::l:::x}"
+		} ) {
+			name: "frame1"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {par l {seq {space ::87:x, par t {comp budgieTitle3:::p:190:p, seq {comp loanScreen:::p:190:p, space s:::p, par t {comp budgieTitle4:::p:190:p, comp submitButton3:::p:190:p}}}, space :p:18:p}, seq l {space :p:121:p, par t {comp jLabelYearlyTotalExpense::t:p:171:p, comp jLabelMonthlyTotalExpense::t:p:171:p, comp jLabelYearlyIncome::t:p:171:p}, space :::x}}, par l {comp budgieBirdPic2:::p:245:p, comp submitButton4:::p:190:p}, space :p:16:p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp budgieTitle3:::p:40:p, space :::p, comp budgieTitle4:::p::p, par l {seq {space :p:102:p, comp jLabelYearlyIncome:::p::p, space u:::p, comp jLabelMonthlyTotalExpense:::p::p, space u:::p, comp jLabelYearlyTotalExpense:::p::p, space ::152:x}, seq t {space ::53:x, comp budgieBirdPic2:::p:164:p, space :p:104:p}}, par b {comp loanScreen::b:p:41:p, comp submitButton4::b:p:41:p, comp submitButton3::b:p:41:p}, space :p:40:p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "budgieBirdPic2"
+					"icon": #SwingIcon0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "budgieTitle3"
+					"text": "Budgie"
+					"font": #Font2
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "budgieTitle4"
+					"text": "Finance Made Simple"
+					"font": #Font3
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabelYearlyIncome"
+					"text": "Yearly Income Total:"
+					"font": #Font1
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabelMonthlyTotalExpense"
+					"text": "Monthly Total Expense:"
+					"font": #Font1
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabelYearlyTotalExpense"
+					"text": "Yearly Total Expense:"
+					"font": #Font1
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "loanScreen"
+					"text": "Loan Calculator"
+					"font": #Font0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "submitButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "submitButton3"
+					"text": "Savings Calculator"
+					"font": #Font0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "submitButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "submitButton4"
+					"text": "????"
+					"font": #Font0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "submitButtonActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 530 )
+			"size": new java.awt.Dimension( 780, 515 )
+		} )
+	}
+}
