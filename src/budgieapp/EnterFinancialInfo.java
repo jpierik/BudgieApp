@@ -10,8 +10,8 @@ public class EnterFinancialInfo extends FinancialInfoUI{
     
 
     FinancialInfoUI infoUI = new FinancialInfoUI();
-    FinancialInfoGUI ui = new FinancialInfoGUI();
-
+    //FinancialInfoGUI ui = new FinancialInfoGUI();
+    
     String monthlyIncomeStr;
     String monthlyBillsStr;
     String monthlyOtherExpenseStr;
@@ -27,13 +27,28 @@ public class EnterFinancialInfo extends FinancialInfoUI{
     float totalMonthlyExpense;
     float totalYearlyExpense;
    
-    public void getInputInfo(){    
-        
-        infoUI.setVisible(true);
-        while (flag == false){
-            if (infoUI.submitTest != null){
-                System.out.println(infoUI.submitTest);
+    public void getInputInfo(){ 
+        while(flag == false){
+            System.out.println(infoUI.submitBool);
+            if (infoUI.isVisible() && infoUI.submitBool == true){
+                
+            //convert strings to numbers   
+            monthlyBillsStr = infoUI.textBills;
+            income = Float.valueOf(infoUI.textIncome);
+            bills = Float.valueOf(infoUI.textBills);
+            otherExpense = Float.valueOf(infoUI.textOtherExpense);
+            livingExpense = Float.valueOf(infoUI.textLivingExpense);
+            
+            //simple calulations for financial info
+            yearlyIncome = income * 12;
+            totalMonthlyExpense = bills + otherExpense + livingExpense;
+            totalYearlyExpense = totalMonthlyExpense * 12;
+            
+            System.out.println(yearlyIncome + " " + totalMonthlyExpense + " " + totalYearlyExpense);
+            infoUI.submitBool = false;
+            flag = true;
             }
+        }
         //infoUI.jLabel1.setText("Hello");
         //infoUI.getContentPane().setBackground(Color.white);
         //monthlyIncomeStr = infoUI.userMonthlyIncome.getText();
@@ -41,18 +56,21 @@ public class EnterFinancialInfo extends FinancialInfoUI{
        /// monthlyOtherExpenseStr = infoUI.userMonthlyOtherExpense.getText();
        // monthlyLivingExpenseStr = infoUI.userMonthlyLivingExpense.getText();
         
-        //convert the strings to number 
-        //income = Float.valueOf(monthlyIncomeStr);
-        //bills = Float.valueOf(monthlyBillsStr);
-        //otherExpense = Float.valueOf(monthlyOtherExpenseStr);
-        //livingExpense = Float.valueOf(monthlyLivingExpenseStr);
-        
         //simple calculations for annual financial facts
         //yearlyIncome = income * 12;
         //totalMonthlyExpense = bills + otherExpense + livingExpense;
         //totalYearlyExpense = totalMonthlyExpense * 12;
-            }
     }
-        }
+
+    public String getMonthlyBillsStr() {
+        return monthlyBillsStr;
+    }
+
+    public void setMonthlyBillsStr(String monthlyBillsStr) {
+        this.monthlyBillsStr = monthlyBillsStr;
+    }
+    
+}
+     
             
     

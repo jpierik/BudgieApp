@@ -14,7 +14,9 @@ public class BudgieTest {
     
     public static void main(String[] args) {
         EnterFinancialInfo info = new EnterFinancialInfo();
+        info.infoUI.setVisible(true);
         info.getInputInfo();
+        
        
     }
     

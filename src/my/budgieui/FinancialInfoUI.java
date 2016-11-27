@@ -19,6 +19,11 @@ public class FinancialInfoUI extends javax.swing.JFrame {
     /**
      * Creates new form FinancialInfoUI
      */
+    public String textBills;
+    public String textIncome;
+    public String textLivingExpense;
+    public String textOtherExpense;
+            
     public String submitTest;
     public boolean submitBool = false;
     public FinancialInfoUI() {
@@ -199,7 +204,7 @@ public class FinancialInfoUI extends javax.swing.JFrame {
                         .addComponent(budgieTitle2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(67, Short.MAX_VALUE)
+                .addContainerGap(68, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -320,7 +325,14 @@ public class FinancialInfoUI extends javax.swing.JFrame {
 
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         // TODO add your handling code here:
-        submitTest = userMonthlyBills.getText();
+        textBills = userMonthlyBills.getText();
+        textLivingExpense = userMonthlyLivingExpense.getText();
+        textIncome = userMonthlyIncome.getText();
+        textOtherExpense = userMonthlyOtherExpense.getText();
+        submitBool = true;
+        new InformationSummaryUI().setVisible(true);
+        this.dispose();
+        //System.out.println(submitTest);
     }//GEN-LAST:event_submitButtonActionPerformed
  
     public static void main(String args[]) {
