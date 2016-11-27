@@ -18,7 +18,7 @@ public class InformationSummaryUI extends javax.swing.JFrame {
     public InformationSummaryUI() {
         getContentPane().setBackground(Color.white);
         initComponents();
-        jLabel1.setText("hello");
+        //jLabel1.setText(info.textBills);
     }
 
     /**
@@ -30,35 +30,162 @@ public class InformationSummaryUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabelTotalIncome1 = new javax.swing.JLabel();
+        javax.swing.JTextField budgieTitle1 = new javax.swing.JTextField();
+        javax.swing.JTextField budgieTitle2 = new javax.swing.JTextField();
+        javax.swing.JTextField textFieldEnterIncome = new javax.swing.JTextField();
+        javax.swing.JTextField textFieldEnterLivingExpense = new javax.swing.JTextField();
+        javax.swing.JTextField textFieldEnterBills = new javax.swing.JTextField();
+        javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
+        jLabelTotalIncome = new javax.swing.JLabel();
+        jLabelTotalYearlyExpense = new javax.swing.JLabel();
+        jLabelTotalMonthlyExpense = new javax.swing.JLabel();
+
+        jLabelTotalIncome1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTotalIncome1.setText("---");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("jLabel1");
+        budgieTitle1.setFont(new java.awt.Font("Kristen ITC", 1, 36)); // NOI18N
+        budgieTitle1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        budgieTitle1.setText("Budgie");
+        budgieTitle1.setBorder(null);
+        budgieTitle1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                budgieTitle1ActionPerformed(evt);
+            }
+        });
+
+        budgieTitle2.setFont(new java.awt.Font("Kristen ITC", 1, 11)); // NOI18N
+        budgieTitle2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        budgieTitle2.setText("Finance Made Simple");
+        budgieTitle2.setBorder(null);
+        budgieTitle2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                budgieTitle2ActionPerformed(evt);
+            }
+        });
+
+        textFieldEnterIncome.setBackground(new java.awt.Color(240, 240, 240));
+        textFieldEnterIncome.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        textFieldEnterIncome.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textFieldEnterIncome.setText("Yearly Total Income:");
+        textFieldEnterIncome.setBorder(null);
+        textFieldEnterIncome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldEnterIncomeActionPerformed(evt);
+            }
+        });
+
+        textFieldEnterLivingExpense.setBackground(new java.awt.Color(240, 240, 240));
+        textFieldEnterLivingExpense.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        textFieldEnterLivingExpense.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textFieldEnterLivingExpense.setText("Monthly Total Expense:");
+        textFieldEnterLivingExpense.setBorder(null);
+        textFieldEnterLivingExpense.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldEnterLivingExpenseActionPerformed(evt);
+            }
+        });
+
+        textFieldEnterBills.setBackground(new java.awt.Color(240, 240, 240));
+        textFieldEnterBills.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        textFieldEnterBills.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textFieldEnterBills.setText("Yearly Total Expense:");
+        textFieldEnterBills.setBorder(null);
+        textFieldEnterBills.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldEnterBillsActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/budgieapp/pictures/budgie bird.jpg"))); // NOI18N
+
+        jLabelTotalIncome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTotalIncome.setText("---");
+
+        jLabelTotalYearlyExpense.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTotalYearlyExpense.setText("---");
+
+        jLabelTotalMonthlyExpense.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTotalMonthlyExpense.setText("---");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 666, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel1)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(118, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(budgieTitle1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(233, 233, 233))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(textFieldEnterBills, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(textFieldEnterLivingExpense, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(textFieldEnterIncome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelTotalYearlyExpense, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelTotalMonthlyExpense, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelTotalIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabel2)))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(245, 245, 245)
+                .addComponent(budgieTitle2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 419, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jLabel1)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(budgieTitle1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(budgieTitle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(textFieldEnterIncome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelTotalIncome))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(textFieldEnterLivingExpense, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelTotalMonthlyExpense))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(textFieldEnterBills, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelTotalYearlyExpense))))
+                .addGap(133, 133, 133))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void budgieTitle1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_budgieTitle1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_budgieTitle1ActionPerformed
+
+    private void budgieTitle2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_budgieTitle2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_budgieTitle2ActionPerformed
+
+    private void textFieldEnterIncomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldEnterIncomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldEnterIncomeActionPerformed
+
+    private void textFieldEnterLivingExpenseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldEnterLivingExpenseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldEnterLivingExpenseActionPerformed
+
+    private void textFieldEnterBillsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldEnterBillsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldEnterBillsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -96,6 +223,9 @@ public class InformationSummaryUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabelTotalIncome;
+    public javax.swing.JLabel jLabelTotalIncome1;
+    public javax.swing.JLabel jLabelTotalMonthlyExpense;
+    public javax.swing.JLabel jLabelTotalYearlyExpense;
     // End of variables declaration//GEN-END:variables
 }

@@ -26,6 +26,10 @@ public class EnterFinancialInfo extends FinancialInfoUI{
     float yearlyIncome;
     float totalMonthlyExpense;
     float totalYearlyExpense;
+    
+    String yearlyIncomeStr;
+    String totalMonthlyExpenseStr;
+    String totalYearlyExpenseStr;
    
     public void getInputInfo(){ 
         while(flag == false){
@@ -43,6 +47,10 @@ public class EnterFinancialInfo extends FinancialInfoUI{
             yearlyIncome = income * 12;
             totalMonthlyExpense = bills + otherExpense + livingExpense;
             totalYearlyExpense = totalMonthlyExpense * 12;
+            
+            yearlyIncomeStr = Float.toString(yearlyIncome);
+            totalMonthlyExpenseStr = Float.toString(totalMonthlyExpense);
+            totalYearlyExpenseStr = Float.toString(totalYearlyExpense);
             
             System.out.println(yearlyIncome + " " + totalMonthlyExpense + " " + totalYearlyExpense);
             infoUI.submitBool = false;

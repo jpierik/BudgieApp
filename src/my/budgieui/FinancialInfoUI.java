@@ -330,8 +330,7 @@ public class FinancialInfoUI extends javax.swing.JFrame {
         textIncome = userMonthlyIncome.getText();
         textOtherExpense = userMonthlyOtherExpense.getText();
         submitBool = true;
-        new InformationSummaryUI().setVisible(true);
-        this.dispose();
+        
         //System.out.println(submitTest);
     }//GEN-LAST:event_submitButtonActionPerformed
  
