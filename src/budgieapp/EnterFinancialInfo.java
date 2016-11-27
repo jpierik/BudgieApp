@@ -4,18 +4,19 @@ package budgieapp;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import budgieapp.FinancialInfoUI;
+import my.budgieui.FinancialInfoUI;
 
-public class EnterFinancialInfo extends BudgieTest{
+public class EnterFinancialInfo extends FinancialInfoUI{
     
 
     FinancialInfoUI infoUI = new FinancialInfoUI();
-    
-   
+    FinancialInfoGUI ui = new FinancialInfoGUI();
+
     String monthlyIncomeStr;
     String monthlyBillsStr;
     String monthlyOtherExpenseStr;
     String monthlyLivingExpenseStr;
+    boolean flag = false;
     
     float income;
     float bills;
@@ -27,17 +28,18 @@ public class EnterFinancialInfo extends BudgieTest{
     float totalYearlyExpense;
    
     public void getInputInfo(){    
-       
+        
         infoUI.setVisible(true);
-        
+        while (flag == false){
+            if (infoUI.submitTest != null){
+                System.out.println(infoUI.submitTest);
+            }
+        //infoUI.jLabel1.setText("Hello");
         //infoUI.getContentPane().setBackground(Color.white);
-        
-        monthlyIncomeStr = infoUI.userMonthlyIncome.getText();
-        monthlyBillsStr = infoUI.userMonthlyLivingExpense.getText();
-        monthlyOtherExpenseStr = infoUI.userMonthlyOtherExpense.getText();
-        monthlyLivingExpenseStr = infoUI.userMonthlyLivingExpense.getText();
-        System.out.println(monthlyIncomeStr);
-        //System.out.println(monthlyLivingExpenseStr);
+        //monthlyIncomeStr = infoUI.userMonthlyIncome.getText();
+       //// monthlyBillsStr = infoUI.userMonthlyLivingExpense.getText();
+       /// monthlyOtherExpenseStr = infoUI.userMonthlyOtherExpense.getText();
+       // monthlyLivingExpenseStr = infoUI.userMonthlyLivingExpense.getText();
         
         //convert the strings to number 
         //income = Float.valueOf(monthlyIncomeStr);
@@ -50,6 +52,7 @@ public class EnterFinancialInfo extends BudgieTest{
         //totalMonthlyExpense = bills + otherExpense + livingExpense;
         //totalYearlyExpense = totalMonthlyExpense * 12;
             }
+    }
         }
             
     

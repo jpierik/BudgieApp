@@ -1,0 +1,86 @@
+JFDML JFormDesigner: "5.2.5.0.333" Java: "1.8.0_111" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp financialInfoPanel::l:::x}"
+			"$verticalGroup": "par l {comp financialInfoPanel::l:::x}"
+		} ) {
+			name: "this"
+			"title": "2"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {space :p:300:p, par l {comp budgieTitle2:::p:152:p, comp budgieTitle1:::p:141:p}}, seq l {space :p:46:p, par t {comp submitInfoBtn:::p:162:p, seq {par t {comp budgieTitle6:::p:267:p, comp budgieTitle4:::p:233:p, comp budgieTitle5::t:p:213:p, comp budgieTitle3::t:p:179:p}, space s:::p, par l {comp monthlyIncomeInput:::p:136:p, comp livingExpenseInput:::p:136:p, comp billsExpenseInput:::p:136:p, comp otherExpenseInput:::p:136:p}}}}}, space ::297:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp budgieTitle1:::p::p, space :::p, comp budgieTitle2:::p::p, space :p:112:p, par b {comp budgieTitle3::b:p::p, comp monthlyIncomeInput::b:p::p}, space :::p, par b {comp budgieTitle4::b:p::p, comp livingExpenseInput::b:p::p}, space :::p, par b {comp budgieTitle5::b:p::p, comp billsExpenseInput::b:p::p}, space :::p, par l {comp budgieTitle6:::p::p, comp otherExpenseInput:::p::p}, space ::147:x, comp submitInfoBtn:::p::p, space :p:42:p}}"
+			} ) {
+				name: "financialInfoPanel"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "budgieTitle1"
+					"text": "Budgie"
+					"font": new java.awt.Font( "Kristen ITC", 1, 36 )
+					"horizontalAlignment": 0
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "budgieTitle2"
+					"text": "Finance Made Simple"
+					"font": new java.awt.Font( "Kristen ITC", 1, 12 )
+					"horizontalAlignment": 0
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "budgieTitle3"
+					"text": "Enter Monthly Income:"
+					"font": new java.awt.Font( "Arial", 1, 14 )
+					"horizontalAlignment": 4
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "budgieTitle4"
+					"text": "Enter Monthly Living Expense:"
+					"font": new java.awt.Font( "Arial", 1, 14 )
+					"horizontalAlignment": 4
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "budgieTitle5"
+					"text": "Enter Monthly Bills Expense:"
+					"font": new java.awt.Font( "Arial", 1, 14 )
+					"horizontalAlignment": 4
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "budgieTitle6"
+					"text": "Enter Any Other Monthly Expense:"
+					"font": new java.awt.Font( "Arial", 1, 14 )
+					"horizontalAlignment": 4
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "monthlyIncomeInput"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "livingExpenseInput"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "billsExpenseInput"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "otherExpenseInput"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "submitInfoBtn"
+					"text": "Submit Infomation"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "submitInfoBtnActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 780, 560 )
+		} )
+	}
+}
